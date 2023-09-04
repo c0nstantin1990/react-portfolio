@@ -64,7 +64,7 @@ function Contact() {
         <div className="contact-form">
           <h3>Contact Me</h3>
           <form className="form">
-            <label for="contact-name">Your Name</label>
+            <label htmlFor="contact-name">Your Name</label>
             <input
               value={userName}
               name="userName"
@@ -74,7 +74,7 @@ function Contact() {
               placeholder="Your Name"
             />
 
-            <label for="contact-email">Your Email</label>
+            <label htmlFor="contact-email">Your Email</label>
             <input
               value={email}
               name="email"
@@ -84,7 +84,7 @@ function Contact() {
               placeholder="Your Email"
             />
 
-            <label for="contact-message">Message</label>
+            <label htmlFor="contact-message">Message</label>
             <textarea
               value={message}
               name="message"

@@ -1,30 +1,26 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
+import "./App.css";
+
 import Header from "../src/components/Header";
 import Contact from "../src/components/Contact";
 import About from "../src/components/About";
 import Footer from "../src/components/Footer";
 import Portfolio from "../src/components/Portfolio";
 import Resume from "../src/components/Resume";
-import { Helmet } from "react-helmet";
-import "./App.css";
 
 function App() {
-  const [currentTab, handleTabChange] = useState("about");
+  const [currentTab, handleTabChange] = useState("About");
+
+  const tabComponents = {
+    About: <About />,
+    Contact: <Contact />,
+    Portfolio: <Portfolio />,
+    Resume: <Resume />,
+  };
 
   const renderTab = () => {
-    if (currentTab === "About") {
-      return <About />;
-    }
-    if (currentTab === "Contact") {
-      return <Contact />;
-    }
-    if (currentTab === "Portfolio") {
-      return <Portfolio />;
-    }
-    if (currentTab === "Resume") {
-      return <Resume />;
-    }
-    return <About />;
+    return tabComponents[currentTab] || tabComponents["About"];
   };
 
   return (
@@ -32,13 +28,9 @@ function App() {
       <Helmet>
         <title>Constantin's Portfolio | {currentTab} </title>
       </Helmet>
-      ;
-      <Header
-        currentTab={currentTab}
-        handleTabChange={handleTabChange}
-      ></Header>
+      <Header currentTab={currentTab} handleTabChange={handleTabChange} />
       <main>{renderTab()}</main>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }
