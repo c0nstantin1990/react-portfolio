@@ -29,7 +29,7 @@ GitHub Repo: https://github.com/c0nstantin1990/react-portfolio
 
 ## Link
 
-Deployed Link:
+Deployed Link: https://c0nstantin1990.github.io/react-portfolio/
 
 ## Features
 
