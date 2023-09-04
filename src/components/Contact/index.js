@@ -8,30 +8,22 @@ function Contact() {
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
+    const { name, value } = e.target;
 
-    if (inputType === "email") {
-      setEmail(inputValue);
-    } else if (inputType === "userName") {
-      setUserName(inputValue);
+    if (name === "userName") {
+      setUserName(value);
+    } else if (name === "email") {
+      setEmail(value);
     } else {
-      setMessage(inputValue);
+      setMessage(value);
     }
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email) || !userName) {
-      setErrorMessage("Email or Name is invalid");
-
-      return;
-    }
-
-    if (!setMessage(message)) {
-      setErrorMessage(`Message is required.`);
+    if (!validateEmail(email) || !userName || !message) {
+      setErrorMessage("Email, Name, or Message is invalid");
       return;
     }
 
@@ -49,7 +41,7 @@ function Contact() {
       <div className="contact-info">
         <div>
           <h3>Hello {userName}</h3>
-          <p>Whant to contact?</p>
+          <p>Want to contact?</p>
           <address>
             Charlotte, NC <br />
             Phone: <a href="tel:704.998.9351">704-998-9351</a>
@@ -63,7 +55,7 @@ function Contact() {
 
         <div className="contact-form">
           <h3>Contact Me</h3>
-          <form className="form">
+          <form className="form" onSubmit={handleFormSubmit}>
             <label htmlFor="contact-name">Your Name</label>
             <input
               value={userName}
@@ -89,13 +81,10 @@ function Contact() {
               value={message}
               name="message"
               onChange={handleInputChange}
-              type="message"
               id="contact-message"
               placeholder="Your Message"
             />
-            <button type="button" onClick={handleFormSubmit}>
-              Submit
-            </button>
+            <button type="submit">Submit</button>
           </form>
         </div>
         {errorMessage && (
