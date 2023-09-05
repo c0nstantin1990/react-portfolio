@@ -1,9 +1,8 @@
 import React from "react";
 import myResume from "../../assets/Resume/ResumeL.pdf";
-import { BsCloudDownload } from "react-icons/bs";
-import { MdFoundation } from "react-icons/md";
-import { GrTechnology } from "react-icons/gr";
-import { GrDocumentPerformance } from "react-icons/gr";
+import { FaNodeJs } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaFileDownload } from "react-icons/fa";
 
 function Resume() {
   return (
@@ -16,7 +15,7 @@ function Resume() {
           <div className="download-info">
             <div className="download-text">
               <a href={myResume} className="download-logo" download>
-                <BsCloudDownload />
+                <FaFileDownload />
               </a>
             </div>
           </div>
@@ -28,14 +27,14 @@ function Resume() {
           <p className="column-text">
             <ul>
               <li className="logo">
-                <MdFoundation />
+                <FaHtml5 />
               </li>
-              <li>HTML5</li>
+              <li>React</li>
+              <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
-              <li>APIs</li>
               <li>Bootstrap</li>
-              <li>GIT</li>
+              <li>JQuery</li>
             </ul>
           </p>
         </div>
@@ -45,28 +44,15 @@ function Resume() {
           <p className="column-text">
             <ul>
               <li className="logo">
-                <GrTechnology />
+                <FaNodeJs />
               </li>
+              <li>APIs</li>
               <li>Node.Js</li>
               <li>Express.js</li>
               <li>MySQL</li>
-              <li>Sequelize</li>
               <li>Mongodb</li>
-            </ul>
-          </p>
-        </div>
-        <div className="article column3">
-          <p className="column-title">Performance Tech</p>
-          <p className="column-text">
-            <ul>
-              <li className="logo">
-                <GrDocumentPerformance />
-              </li>
-              <li>Mongoose</li>
+              <li>REST</li>
               <li>GraphQL</li>
-              <li>React</li>
-              <li>MERN</li>
-              <li>State</li>
             </ul>
           </p>
         </div>

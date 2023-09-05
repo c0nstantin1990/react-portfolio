@@ -1,6 +1,7 @@
 import React from "react";
-import { VscGithubAlt } from "react-icons/vsc";
-import { AiOutlineLinkedin } from "react-icons/ai";
+import { FaStackOverflow } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -10,12 +11,17 @@ function Footer() {
         <ul>
           <a href="https://github.com/c0nstantin1990">
             <li className="logo">
-              <VscGithubAlt />
+              <FaGithub />
             </li>
           </a>
           <a href="https://www.linkedin.com/in/constantin-constantinov-37906227a/">
             <li className="logo">
-              <AiOutlineLinkedin />
+              <FaLinkedin />
+            </li>
+          </a>
+          <a href="https://stackoverflow.com/users/22506176/constantin-constantinov">
+            <li className="logo">
+              <FaStackOverflow />
             </li>
           </a>
         </ul>
