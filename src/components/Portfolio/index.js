@@ -8,7 +8,7 @@ function Portfolio() {
     <div>
       <section id="work" className="jobs">
         <div className="flex-row">
-          <h2 className="section-title secondary-border">Work</h2>
+          <h2 className="section-title secondary-border">My Projects</h2>
         </div>
 
         <div className="job">

@@ -178,12 +178,10 @@ header nav ul li a:hover {
 }
 
 .contact-form button {
-  width: 20%;
-  border: none;
+  width: 30%;
   background: #cce8f0;
   color: #0d0d0d;
   text-align: center;
-  padding: auto;
   font-size: 25px;
   border-radius: 50px;
 }
@@ -356,7 +354,7 @@ header nav ul li a:hover {
 .article {
   margin: 10px;
   margin-bottom: 1em;
-  background-color: #cfcd95;
+  background-color: #95cf97;
 }
 
 .download-text {

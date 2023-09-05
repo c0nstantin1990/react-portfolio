@@ -8,22 +8,28 @@ function Contact() {
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
-    const { name, value } = e.target;
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
 
-    if (name === "userName") {
-      setUserName(value);
-    } else if (name === "email") {
-      setEmail(value);
+    if (inputType === "email") {
+      setEmail(inputValue);
+    } else if (inputType === "userName") {
+      setUserName(inputValue);
     } else {
-      setMessage(value);
+      setMessage(inputValue);
     }
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!validateEmail(email) || !userName || !message) {
-      setErrorMessage("Email, Name, or Message is invalid");
+    if (!validateEmail(email) || !userName) {
+      setErrorMessage("Email or Name is invalid");
+      return;
+    }
+    if (!setMessage(message)) {
+      setErrorMessage(`Message is required.`);
       return;
     }
 
@@ -35,16 +41,16 @@ function Contact() {
   return (
     <section id="reach-out" className="contact">
       <div className="flex-row">
-        <h2 className="section-title secondary-border">Contact</h2>
+        <h2 className="section-title secondary-border">Contact Me</h2>
       </div>
 
       <div className="contact-info">
         <div>
-          <h3>Hello {userName}</h3>
-          <p>Want to contact?</p>
+          <h3>Hi {userName}</h3>
+          <p>My Info:</p>
           <address>
             Charlotte, NC <br />
-            Phone: <a href="tel:704.998.9351">704-998-9351</a>
+            Mobile: <a href="704.998.9351">704.998.9351</a>
             <br />
             Email:{" "}
             <a href="mailto:constantinov.constantin@gmail.com">
@@ -54,9 +60,8 @@ function Contact() {
         </div>
 
         <div className="contact-form">
-          <h3>Contact Me</h3>
-          <form className="form" onSubmit={handleFormSubmit}>
-            <label htmlFor="contact-name">Your Name</label>
+          <form className="form">
+            <label for="contact-name">Your Name</label>
             <input
               value={userName}
               name="userName"
@@ -66,7 +71,7 @@ function Contact() {
               placeholder="Your Name"
             />
 
-            <label htmlFor="contact-email">Your Email</label>
+            <label for="contact-email">Your Email</label>
             <input
               value={email}
               name="email"
@@ -76,15 +81,18 @@ function Contact() {
               placeholder="Your Email"
             />
 
-            <label htmlFor="contact-message">Message</label>
+            <label for="contact-message">Message</label>
             <textarea
               value={message}
               name="message"
               onChange={handleInputChange}
+              type="message"
               id="contact-message"
               placeholder="Your Message"
             />
-            <button type="submit">Submit</button>
+            <button type="button" onClick={handleFormSubmit}>
+              Submit
+            </button>
           </form>
         </div>
         {errorMessage && (
