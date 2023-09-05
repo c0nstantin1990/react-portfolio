@@ -1,7 +1,5 @@
-* {
-  margin: 555;
-  padding: 555;
-  box-sizing: border-box;
+#root {
+  background-color: #4c657d;
 }
 
 body {
@@ -107,6 +105,9 @@ header nav ul li a:hover {
   margin: 0 auto;
 }
 
+#about-me {
+  background-color: #4c657d;
+}
 .intro-info {
   flex: 2 70%;
   display: flex;
@@ -130,11 +131,11 @@ header nav ul li a:hover {
 }
 
 #reach-out {
-  background: #80a3e0;
+  background: #4c657d;
 }
 
 #reach-out h2 {
-  color: #0e5259;
+  color: #95b0ec;
 }
 
 .contact h2 {
@@ -201,7 +202,7 @@ header nav ul li a:hover {
 }
 
 .contact-info h3 {
-  color: #0e5259;
+  color: #95b0ec;
   font-size: 32px;
 }
 
@@ -221,7 +222,7 @@ header nav ul li a:hover {
 }
 
 .contact-info a {
-  color: #0e5259;
+  color: #95b0ec;
   display: inline;
 }
 
@@ -295,8 +296,8 @@ header nav ul li a:hover {
 }
 
 .job-img img:hover {
-  border: 5px solid #acf2e5;
-  transform: scale(1.1);
+  border: 5px solid #455b57;
+  transform: scale(2);
 }
 
 .job-img img:hover::after {
@@ -319,6 +320,10 @@ header nav ul li a:hover {
   font-size: 30px;
   margin: 0 auto;
   justify-content: center;
+}
+
+#resume-back {
+  background-color: #4c657d;
 }
 
 .resume-body {
