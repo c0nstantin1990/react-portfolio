@@ -5,22 +5,21 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 function Footer() {
   return (
     <footer>
-      <h2>Made by Constantin ©</h2>
-      <ul className="social-links">
-        <li>
-          <a href="https://github.com/c0nstantin1990" className="logo-link">
-            <VscGithubAlt className="logo" />
+      <h2>Created By Constantin©</h2>
+      <p>
+        <ul>
+          <a href="https://github.com/c0nstantin1990">
+            <li className="logo">
+              <VscGithubAlt />
+            </li>
           </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/constantin-constantinov-37906227a/"
-            className="logo-link"
-          >
-            <AiOutlineLinkedin className="logo" />
+          <a href="https://www.linkedin.com/in/constantin-constantinov-37906227a/">
+            <li className="logo">
+              <AiOutlineLinkedin />
+            </li>
           </a>
-        </li>
-      </ul>
+        </ul>
+      </p>
     </footer>
   );
 }
