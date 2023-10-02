@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.d21a591e.css",
-    "main.js": "/react-portfolio/static/js/main.b3999efd.js",
+    "main.js": "/react-portfolio/static/js/main.be7f8d27.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/profile.jpeg": "/react-portfolio/static/media/profile.2f48d98fd297c28bf5ca.jpeg",
     "static/media/cover.jpeg": "/react-portfolio/static/media/cover.ab37a18ed4f2b8aa3e1f.jpeg",
-    "static/media/blogImage.jpeg": "/react-portfolio/static/media/blogImage.abdbc3c3e4c2f67521d4.jpeg",
     "static/media/carImage.jpeg": "/react-portfolio/static/media/carImage.a21277152c6434f2215b.jpeg",
+    "static/media/mixImage.jpeg": "/react-portfolio/static/media/mixImage.ccb1a626ec0482101134.jpeg",
     "static/media/frostImage.jpeg": "/react-portfolio/static/media/frostImage.bf905d42c43b532de9d7.jpeg",
     "static/media/weatherImage.jpeg": "/react-portfolio/static/media/weatherImage.ff27996cdbb1c5be1404.jpeg",
     "static/media/ResumeL.pdf": "/react-portfolio/static/media/ResumeL.47c4618f82b0b9dc7179.pdf",
@@ -14,11 +14,11 @@
     "static/media/noteImage.jpeg": "/react-portfolio/static/media/noteImage.df22c53fb2bbec547293.jpeg",
     "index.html": "/react-portfolio/index.html",
     "main.d21a591e.css.map": "/react-portfolio/static/css/main.d21a591e.css.map",
-    "main.b3999efd.js.map": "/react-portfolio/static/js/main.b3999efd.js.map",
+    "main.be7f8d27.js.map": "/react-portfolio/static/js/main.be7f8d27.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d21a591e.css",
-    "static/js/main.b3999efd.js"
+    "static/js/main.be7f8d27.js"
   ]
 }
