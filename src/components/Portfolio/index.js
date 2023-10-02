@@ -1,7 +1,7 @@
 import React from "react";
 import carImage from "../../assets/Work/carImage.jpeg";
 import frostImage from "../../assets/Work/frostImage.jpeg";
-import blogImage from "../../assets/Work/blogImage.jpeg";
+import mixImage from "../../assets/Work/mixImage.jpeg";
 import noteImage from "../../assets/Work/noteImage.jpeg";
 import weatherImage from "../../assets/Work/weatherImage.jpeg";
 import schedulerImage from "../../assets/Work/schedulerImage.jpeg";
@@ -12,6 +12,40 @@ function Portfolio() {
       <section id="work" className="jobs">
         <div className="flex-row">
           <h2 className="section-title secondary-border">My Projects</h2>
+        </div>
+
+        <div className="job">
+          <div className="job-info">
+            <div className="job-img">
+              <a href="https://mixmuse-b1c9f2067218.herokuapp.com/">
+                {" "}
+                <img
+                  src={mixImage}
+                  className="my-2"
+                  style={{ width: "100%" }}
+                  alt="Blog Tech"
+                />
+              </a>
+            </div>
+            <div className="job-text">
+              <h4>MixMuse</h4>
+              <p>
+                This MERN full stack e-commerce web application is built with
+                React and the open source JavaScript library Redux, which
+                remains the industry standard for managing complex state in a
+                large-scale React application. MixMuse is a scalable,
+                user-focused MERN app that offers a wide range of bartending
+                supplies such as liquor, equipment and mixers. Age verification
+                is required to enter the site. The app leverages Redux's
+                powerful capabilities to handle global state, ensuring a
+                seamless shopping experience. The Redux store orchestrates data
+                flow, while a Redux provider grants access to this central
+                state. This architecture enables precise control over state
+                changes and data extraction, ensuring that actions are
+                dispatched effectively throughout the app.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="job">
@@ -40,37 +74,6 @@ function Portfolio() {
                 intuitive interface and responsive design, our application
                 offers a seamless and enjoyable experience for car buyers and
                 sellers alike.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="job">
-          <div className="job-info">
-            <div className="job-img">
-              <a href="https://blog-tech-c1f378058cd2.herokuapp.com/">
-                {" "}
-                <img
-                  src={blogImage}
-                  className="my-2"
-                  style={{ width: "100%" }}
-                  alt="Blog Tech"
-                />
-              </a>
-            </div>
-            <div className="job-text">
-              <h4>Blog Tech</h4>
-              <p>
-                Blog Tech is a feature-rich CMS-style blog site that empowers
-                users to effortlessly create, manage, and share personalized
-                blog posts. With a user-friendly interface, newcomers can easily
-                sign up, while existing users enjoy a seamless login experience.
-                The dashboard offers quick access to all posts, providing the
-                freedom to edit or delete them as desired. Engaging with the
-                community is encouraged through comments on blog posts,
-                fostering meaningful interactions. A secure login/logout system
-                safeguards user data, and a session timeout ensures added
-                protection for idle users.
               </p>
             </div>
           </div>
