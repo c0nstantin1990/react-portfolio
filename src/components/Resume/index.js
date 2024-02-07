@@ -1,5 +1,5 @@
 import React from "react";
-import myResume from "../../assets/Resume/ResumeL.pdf";
+import myResume from "../../assets/Resume/Resume.pdf";
 import { FaNodeJs } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaFileDownload } from "react-icons/fa";
